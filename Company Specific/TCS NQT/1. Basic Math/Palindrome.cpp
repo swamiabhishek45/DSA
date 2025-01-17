@@ -12,13 +12,9 @@ bool isPalindrom(int num)
     }
 
     if (num != revNum)
-    {
         return false;
-    }
     else
-    {
         return true;
-    }
 }
 
 int main()
