@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isPalindrom(int num)
+bool isPalindrome(int num)
 {
     int revNum = 0;
+    int temp = num;
     while (num > 0)
     {
         int digit = num % 10;
@@ -11,7 +12,7 @@ bool isPalindrom(int num)
         num /= 10;
     }
 
-    if (num != revNum)
+    if (temp != revNum)
         return false;
     else
         return true;
@@ -19,8 +20,18 @@ bool isPalindrom(int num)
 
 int main()
 {
-    int num = 123321;
+    int num = 121;
 
-    cout << isPalindrom(num);
+    cout << isPalindrome(num) << endl;
+
+    int min = 100;
+    int max = 150;
+    for (int i = min; i <= max; i++)
+    {
+        if (isPalindrome(i))
+        {
+            cout << i << " ";
+        }
+    }
     return 0;
 }
