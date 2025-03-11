@@ -12,7 +12,7 @@ int main()
         if (n % i == 0)
         {
             if (i * i == 0 || i == 1)
-            {   
+            {
                 sum += i;
             }
             else

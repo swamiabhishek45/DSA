@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     int n = 378;
@@ -9,13 +8,14 @@ int main()
     while (temp != 0)
     {
         sum += temp % 10;
-        n /= 10;
+        temp /= 10;
     }
-
     if (n % sum == 0)
-        cout << n << "is harshed number";
+    {
+        cout << "YES it is Harshad Number" << "\n";
+    }
     else
-        cout << n << "is not harshed number";
-
-    return 0;
+    {
+        cout << "NO it is not Harshad Number" << "\n";
+    }
 }

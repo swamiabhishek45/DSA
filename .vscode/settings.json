@@ -3,6 +3,8 @@
         "*.ejs": "html",
         "iostream": "cpp",
         "cmath": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp"
     }
 }
